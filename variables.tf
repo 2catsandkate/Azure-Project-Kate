@@ -33,7 +33,7 @@ variable "dbname"{
 }
 
 variable "db_server_name" {
- default = "team2-db-server-wordpress"
+ default = "db-server-wordpress-project-Azure2023"
 }
 
 variable "database_admin_login" {
