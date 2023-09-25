@@ -8,11 +8,11 @@ sudo wget https://wordpress.org/wordpress-5.6.11.tar.gz
 sudo tar -xf wordpress-5.6.11.tar.gz -C /var/www/html/
 sudo mv /var/www/html/wordpress/* /var/www/html/
 sudo cp /var/www/html/wp-config-sample.php  /var/www/html/wp-config.php 
-sudo sed 's/database_name_here/db-wordpress-team2-aug22/g' /var/www/html/wp-config.php -i
+sudo sed 's/database_name_here/db-wordpress-project-team2-Azure2023/g' /var/www/html/wp-config.php -i
 sudo sed 's/username_here/wordpress@team2-db-server-wordpress/g' /var/www/html/wp-config.php -i
 sudo sed 's/password_here/26F4QXHVYbBjC$WH2HAc/g' /var/www/html/wp-config.php -i
 sudo sed 's/localhost/team2-db-server-wordpress.mysql.database.azure.com/g' /var/www/html/wp-config.php -i
-#DBNAME="db-wordpress-team2-aug22"
+#DBNAME="db-wordpress-project-team2-Azure2023"
 sudo getenforce
 sudo sed 's/SELINUX=permissive/SELINUX=enforcing/g' /etc/sysconfig/selinux -i
 sudo setenforce 0
