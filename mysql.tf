@@ -42,3 +42,8 @@ data "azurerm_mysql_server" "wordpress" {
   name                = azurerm_mysql_server.wordpress.name
   resource_group_name = azurerm_resource_group.wordpress.name
 }
+
+
+output "wordpress" {
+    name = azurerm_mysql_firewall_rule.wordpress.azurerm_public_ip.wordpress.start_ip_address
+}
