@@ -1,4 +1,3 @@
-#Creating security group and addid to existing terraform resource group
 resource "azurerm_network_security_group" "wordpress" {
   name                = var.sec_group
   location            = azurerm_resource_group.wordpress.location
