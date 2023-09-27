@@ -7,6 +7,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "wordpress" {
   admin_username                  = var.admin_username
   admin_password                  = var.admin_password
   disable_password_authentication = false
+  custom_data = base64encode(file("data-custom.tpl"))
  source_image_reference {
     publisher = "OpenLogic"
     offer     = "CentOS"
