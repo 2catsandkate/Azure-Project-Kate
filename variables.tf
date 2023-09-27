@@ -29,11 +29,11 @@ variable "admin_password" {
 }
 
 variable "dbname"{
-  default = "db-wordpress-project-team2-azure2023"
+  default = "db-wordpress-project-team2-Azure2023"
 }
 
 variable "db_server_name" {
- default = "db-server-wordpress-project-azure2023"
+ default = "db-server-wordpress-project-Azure2023"
 }
 
 variable "database_admin_login" {
