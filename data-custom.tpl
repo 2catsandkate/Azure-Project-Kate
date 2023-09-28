@@ -20,7 +20,7 @@ sudo chown -R apache:apache /var/www/html/
 sudo systemctl start httpd
 sudo systemctl enable httpd
 
-# DB_SERVER_NAME="team2-db-server-wordpress"
+# DB_SERVER_NAME="db-server-wordpress-project-Azure2023"
 
 
 # export WORDPRESS_DB_HOST= "${DB_SERVER_NAME}.mysql.database.azure.com"
